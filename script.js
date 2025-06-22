@@ -48,6 +48,7 @@ boxBTN.forEach((box, inex) => {
         } else {
             box.innerHTML = "O"
             box.style.color = "RED"
+            user1.style.backgroundColor = "white"
             user1.style.color="black";
             user2.style.backgroundColor = "transparent"
             user2.style.color="white"
