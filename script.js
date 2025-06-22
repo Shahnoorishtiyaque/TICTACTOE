@@ -43,12 +43,12 @@ boxBTN.forEach((box, inex) => {
             user1.style.backgroundColor = "transparent"
             user1.style.color="white"
             chance = false
-            console.log();
 
 
         } else {
             box.innerHTML = "O"
             box.style.color = "RED"
+            user1.style.backgroundColor="white
             user1.style.color="black";
             user2.style.backgroundColor = "transparent"
             user2.style.color="white"
