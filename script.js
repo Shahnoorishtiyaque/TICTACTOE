@@ -115,9 +115,9 @@ replayBTN.addEventListener("click", function () {
         box.disabled = false
     })
     chance = true;
-    user1.style.backgroundColor = "white";
+    user1.style.backgroundColor = "green";
     user2.style.backgroundColor = "transparent";
-    user1.style.color="black";
+    user1.style.color="white";
     user2.style.color="white";
 
    // tictactoe.style.display = "none";
