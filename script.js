@@ -38,7 +38,7 @@ boxBTN.forEach((box, inex) => {
         }
         if (chance == true) {
             box.innerHTML = "X"
-            user2.style.backgroundColor = "green"
+            user2.style.backgroundColor = "white"
             user2.style.color="black";
             user1.style.backgroundColor = "transparent"
             chance = false
@@ -48,7 +48,7 @@ boxBTN.forEach((box, inex) => {
         } else {
             box.innerHTML = "O"
             box.style.color = "RED"
-            user1.style.backgroundColor = "green"
+            user1.style.backgroundColor = "white"
             user1.style.color="black";
             user2.style.backgroundColor = "transparent"
             chance = true
@@ -116,6 +116,8 @@ replayBTN.addEventListener("click", function () {
     chance = true;
     user1.style.backgroundColor = "transparent";
     user2.style.backgroundColor = "transparent";
+    user1.style.color="white";
+    user2.style.color="white";
 
    // tictactoe.style.display = "none";
   //  start.style.display = "block";
