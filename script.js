@@ -49,7 +49,7 @@ boxBTN.forEach((box, inex) => {
         } else {
             box.innerHTML = "O"
             box.style.color = "RED"
-            user1.style.backgroundColor = "white"
+            let someoneWon = win() = "white"
             user1.style.color="black";
             user2.style.backgroundColor = "transparent"
             user2.style.color="white"
@@ -115,6 +115,7 @@ replayBTN.addEventListener("click", function () {
     boxBTN.forEach(box => {
         box.innerHTML = ""
         box.disabled = false
+        box.style.color = "white"
     })
     chance = true;
     user1.style.backgroundColor = "green";
