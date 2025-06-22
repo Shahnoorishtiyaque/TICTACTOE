@@ -14,16 +14,17 @@ startBTN.addEventListener("click", function () {
         return;
     }
 
-    // Show game section and hide start screen
+    
     tictactoe.style.display = "flex";
     start.style.display = "none";
 
-    // Set player names
+    
     user1.textContent = player1.value.trim();
     user2.textContent = player2.value.trim();
 
-    // Highlight Player 1's turn first
-    user1.style.backgroundColor = "green";
+    
+    user1.style.backgroundColor = "white";
+    user1.style.color="black";
     user2.style.backgroundColor = "transparent";
 })
 
@@ -38,6 +39,7 @@ boxBTN.forEach((box, inex) => {
         if (chance == true) {
             box.innerHTML = "X"
             user2.style.backgroundColor = "green"
+            user2.style.color="black";
             user1.style.backgroundColor = "transparent"
             chance = false
             console.log();
@@ -47,6 +49,7 @@ boxBTN.forEach((box, inex) => {
             box.innerHTML = "O"
             box.style.color = "RED"
             user1.style.backgroundColor = "green"
+            user1.style.color="black";
             user2.style.backgroundColor = "transparent"
             chance = true
         }
@@ -114,10 +117,10 @@ replayBTN.addEventListener("click", function () {
     user1.style.backgroundColor = "transparent";
     user2.style.backgroundColor = "transparent";
 
-    tictactoe.style.display = "none";
-    start.style.display = "block";
-    player1.value = "";
-    player2.value = "";
+   // tictactoe.style.display = "none";
+  //  start.style.display = "block";
+   // player1.value = "";
+    //player2.value = "";
 
 })
 
